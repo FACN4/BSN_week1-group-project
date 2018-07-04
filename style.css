@@ -1,19 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 body {
-  background-color: #d9f9ca;
-  font-family: curvsive;
+  background-color:#d9f9ca;
+  font-family: Alegreya Sans;
+  font-size:18px;
 }
-* {
-  padding: 0;
-  margin: 0;
+
+body section {
+  background-color:#d9f9ca;
 }
+
+#about{
+  padding: 30px 0px 0px 0px;
+}
+
 nav {
   font-size: 26px;
   background-color: #4caf50;
   width: 100%;
-  position: fixed;
+  position:fixed;
+  z-index: 1;
 }
 
 nav ul {
+  list-style-type: none;
   height: 50px;
   width: 100%;
   margin: 0;
@@ -30,9 +39,17 @@ nav ul li {
 nav ul li:hover {
   background-color: #c0edc1;
 }
+ section {
+   background-color :#c0edc1;
+ }
+  .container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 section {
-  padding: 20px;
+  padding:20px;
+  background-color: #c0edc1;
 }
 .photo {
   width: 100%;
@@ -69,15 +86,17 @@ select {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #c0edc1;
 }
 
-.btn-error {
+.btn-error{
+  font-size:12px;
   max-width: 200px;
   background-color: #086d0c;
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 30px;
   white-space: normal;
   word-wrap: break-word;
 }
@@ -95,4 +114,11 @@ div {
   nav {
     bottom: 0px;
   }
+    .container2{
+      grid-template-columns: 1fr;
+    }
+    #about {
+      padding : 0px 0px 0px 0px;
+
+    }
 }
