@@ -34,3 +34,28 @@ li a:hover {
   background-coor: blue;
   color: maroon;
 }
+
+#about {
+  background-color: grey;
+}
+
+#contact {
+  background-color: grey;
+}
+
+
+body {
+  padding:20px;
+}
+
+form {
+  padding:20px;
+}
+.photo{
+  width:100%;
+}
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
