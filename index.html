@@ -51,21 +51,18 @@
 
   <section id = 'contact'>
     <h1> contact </h1>
-    <form action= 'mailto:benjamin-newman@live.co.uk' method = 'POST' enctype = 'text/plain'>
-      First name: <br>
-      <input required pattern = '[A-Za-z]{1,20}' class = 'textbox textbox_small' name = 'First name' type = 'text' placeholder = 'John'> <br>
-      Last name: <br>
-      <input required pattern = '[A-Za-z]{1,20}' class = 'textbox textbox_small' name = 'Last name' type = 'text' placeholder = 'Smith'> <br>
-      Email: <br>
-      <input required class = 'textbox textbox_small' name = 'Email' type = 'email' placeholder = 'example@gmail.com'> <br>
-      Mobile: <br>
-      <input class = 'textbox textbox_small' name = 'Mobile' type = 'tel' placeholder = 'Mobile number (optional)'> <br>
-      Message: <br>
-      <input required class = 'textbox textbox_big' name = 'Message' type = 'text' placeholder = 'Type message here' size = '50'> <br>
-      <input class = 'btn btn_submit' type = 'submit' value = 'Send'>
-
-    </form>
-  </section>
+  <form method="POST" action="https://formspree.io/benjamin-newman@live.co.uk">
+    <input required pattern = '[A-Za-z]{1,20}' name = 'First name (Letters only)' type = 'text' placeholder = 'First Name'> <br>
+    <input required pattern = '[A-Za-z]{1,20}' name = 'Last name (Letters only)' type = 'text' placeholder = 'Last Name'> <br>
+    <input required class = 'textbox textbox_small' name = 'Email' type = 'email' placeholder = 'example@gmail.com'> <br>
+    <input class = 'textbox textbox_small' name = 'Mobile' type = 'tel' placeholder = 'Mobile number (optional)'> <br>
+    <input id = 'message' required class = 'textbox textbox_big' name = 'Message' type = 'text' placeholder = 'Type message here' size = '50'> <br>
+    <button class = 'btn' type="submit">Send</button>
+  </form>
+  <form action="mailto:benjamin-newman@live.co.uk" method="GET">
+    <input class = 'btn btn-error' type="submit" value="If form not sent, click here. " />
+</form>
+</section>
 
   <footer>
     <p> Designed by G-Force </p>
