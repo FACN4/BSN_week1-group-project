@@ -27,37 +27,41 @@
   </section>
 
   <section id = 'team'>
-    <h1> Meet the team </h1>
+   <h1> Meet the team </h1>
+<div class = 'container'>
     <div>
-      <h2> Ben <h2>
+      <h2> Ben </h2>
       <img class = 'photo' src = 'http://www.mantherapy.org/bundles/gritman/images/Dr_Rich_armchair.png?v20' alt = 'Funny old man'>
-      <p> I'm Ben blah lahdkudsfh vioud sh vdfks chvoidfs </p>
+        <p> I'm Ben blah lahdkudsfh vioud sh vdfks chvoidfs </p>
     </div>
+
     <div>
       <h2> Sol </h2>
       <img class = 'photo' src = 'http://www.mantherapy.org/bundles/gritman/images/Dr_Rich_armchair.png?v20' alt = 'Funny old man'>
       <p> I'm Sol blah lahdkudsfh vioud sh vdfks chvoidfs </p>
     </div>
+
     <div>
       <h2> Bubbles </h2>
       <img class = 'photo' src = 'http://www.mantherapy.org/bundles/gritman/images/Dr_Rich_armchair.png?v20' alt = 'Funny old man'>
       <p> I'm Bubbles blah lahdkudsfh vioud sh vdfks chvoidfs </p>
     </div>
+  </div>
   </section>
 
   <section id = 'contact'>
     <h1> contact </h1>
     <form action= 'mailto:benjamin-newman@live.co.uk' method = 'POST' enctype = 'text/plain'>
       First name: <br>
-      <input class = 'textbox textbox_small' name = 'First name' type = 'text' placeholder = 'John'> <br>
+      <input required pattern = '[A-Za-z]{1,20}' class = 'textbox textbox_small' name = 'First name' type = 'text' placeholder = 'John'> <br>
       Last name: <br>
-      <input class = 'textbox textbox_small' name = 'Last name' type = 'text' placeholder = 'Smith'> <br>
+      <input required pattern = '[A-Za-z]{1,20}' class = 'textbox textbox_small' name = 'Last name' type = 'text' placeholder = 'Smith'> <br>
       Email: <br>
-      <input class = 'textbox textbox_small' name = 'Email' type = 'text' placeholder = 'example@gmail.com'> <br>
+      <input required class = 'textbox textbox_small' name = 'Email' type = 'email' placeholder = 'example@gmail.com'> <br>
       Mobile: <br>
-      <input class = 'textbox textbox_small' name = 'Mobile' type = 'text' placeholder = 'Mobile number'> <br>
+      <input class = 'textbox textbox_small' name = 'Mobile' type = 'tel' placeholder = 'Mobile number (optional)'> <br>
       Message: <br>
-      <input class = 'textbox textbox_big' name = 'Message' type = 'text' placeholder = 'Type message here' size = '50'> <br>
+      <input required class = 'textbox textbox_big' name = 'Message' type = 'text' placeholder = 'Type message here' size = '50'> <br>
       <input class = 'btn btn_submit' type = 'submit' value = 'Send'>
 
     </form>
