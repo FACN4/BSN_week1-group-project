@@ -1,4 +1,5 @@
 # Week 1 Single Page Website Project
+Follow link to the website >> https://facn4.github.io/BSN_week1-group-project/
 
 ## Why
 
@@ -24,11 +25,12 @@ The site is to be a portfolio of services provided by our team for clients inter
   - Designed by G-Force
 
 ## How
+The site was made with just HTML and CSS. HTML5 enables a fairly interactive form without any javascript.
 
-1.  Create repo
-2.  Create ReadME file
-3.  Create HTML skeleton with full team and discuss the content, layout and functionality of the site.
-4.  Detailed HTML for each section.
-5.  CSS for all sections
-6.  Javascript for the forms
-7.  Javascript for sliding through team photos.
+There are two send options.
+1. This is the primary send button which uses an external website called formspree.io.
+2. This option is a backup and uses the 'mailto:myemailaddress' function.
+  - _Name - Only letters. Can't be left blank_ This was achieved in HTML by giving the pattern attribute a RegEx which only accepted letters.
+  - _email - email verification. Can't be left blank_ This was achieved using HTML by stating the input type as 'email'.
+  - _mobile - numbers only (and + sign). Length between 7 to 15. Can be left blank (optional)_ This was achieved in HTML by giving the pattern attribute a RegEx which only accepted numbers.
+  - _message - 1-500 characters. If less than 20 characters it prompts 'Is your message finished > yes/no'_ This was not achieved.

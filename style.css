@@ -1,66 +1,61 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
-@import url("https://fonts.googleapis.com/css?family=verdana");
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
 body {
-  background-color: #d9f9ca;
+  background-color:#d9f9ca;
   font-family: Alegreya Sans;
-  font-size: 18px;
+  font-size:18px;
 }
 
 body section {
-  background-color: #d9f9ca;
-  font-family: verdana;
-  fontsize: 30px;
-  text-align: justify;
-  color: black;
+  background-color:#d9f9ca;
 }
 
-#about {
+#about{
   padding: 30px 0px 0px 0px;
 }
 
-nav {
+.navbar {
   font-size: 26px;
   background-color: #4caf50;
   width: 100%;
-  position: fixed;
+  position:fixed;
   z-index: 1;
 }
 
-nav ul {
+.navbar_ul {
   list-style-type: none;
   height: 50px;
   width: 100%;
   margin: 0;
 }
 
-nav ul li {
+.navbar_ul_li a{
   padding: 10px;
   color: white;
   float: left;
   border-right: 1px;
   text-align: center;
+  text-decoration: none !important;
 }
 
-nav ul li:hover {
+.navbar_ul_li:hover {
   background-color: #c0edc1;
 }
-section {
-  background-color: #c0edc1;
-}
-.container2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+ section {
+   background-color :#c0edc1;
+ }
+  .container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 section {
-  padding: 20px;
+  padding:20px;
   background-color: #c0edc1;
 }
 .photo {
   width: 100%;
   border-style: solid;
   border-color: darkgreen;
-  border-radius: 4px;
 }
 .container {
   display: grid;
@@ -97,8 +92,8 @@ select {
   background-color: #c0edc1;
 }
 
-.btn-error {
-  font-size: 12px;
+.btn-error{
+  font-size:12px;
   max-width: 200px;
   background-color: #086d0c;
   position: absolute;
@@ -115,15 +110,24 @@ div {
 
 @media only screen and (max-width: 600px) {
   .container {
+    display: block;
     grid-template-columns: 1fr;
   }
   nav {
     bottom: 0px;
   }
-  .container2 {
-    grid-template-columns: 1fr;
-  }
-  #about {
-    padding: 0px 0px 0px 0px;
-  }
+    .container2{
+      display: block;
+      grid-template-columns: 1fr;
+    }
+    #about {
+      padding : 0px 0px 0px 0px;
+
+    }
+    footer {
+      display: none;
+    }
+    #contact {
+      padding : 0px 0px 80px 0px;
+    }
 }
