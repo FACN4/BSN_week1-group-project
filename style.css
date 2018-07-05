@@ -18,6 +18,8 @@ body section {
   width: 100%;
   position: fixed;
   z-index: 1;
+  padding-top: 40px;
+  margin-top: -40px;
 }
 
 .navbar_ul {
@@ -62,7 +64,9 @@ section {
   width: 100%;
   border-style: solid;
   border-color: darkgreen;
+  border-radius: 4px;
 }
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
