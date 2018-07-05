@@ -6,29 +6,21 @@
     G-force Web Development
   </title>
   <link href= "style.css"  rel="stylesheet"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <nav>
-    <ul>
-  <li><a href="#about">About</a></li>
-  <li><a href="#team">Team</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+  <nav class = 'navbar'>
+    <ul class = 'navbar_ul'>
+      <li class = 'navbar_ul_li'><a href="#about">About</a></li>
+      <li class = 'navbar_ul_li'><a href="#team">Team</a></li>
+      <li class = 'navbar_ul_li'><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
   <section id = 'about'>
     <h1> About </h1>
     <div class="container2">
       <div>
-        <p> Team G-force met at Founders & Coders and since then G-Force is the most
-           powerful team of web developers. The tiger (Panthera tigris) is the largest
-           cat species, most recognizable for its pattern of dark vertical stripes on
-           reddish-orange fur with a lighter underside. The species is classified in the
-           genus Panthera with the lion, leopard, jaguar, and snow leopard.
-           It is an apex predator, primarily preying on ungulates such as deer and
-            bovids. It is territorial and generally a solitary but social predator,
-             often requiring large contiguous areas of habitat that support its prey
-             requirements. This, coupled with the fact that it is indigenous to some
-             of the more densely populated places on Earth, has caused significant conflicts with humans.
+        <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
         </p>
       </div>
       <div>
@@ -49,9 +41,7 @@
     <div>
       <h2> Sol </h2>
       <img class = 'photo' src = 'images/sol.jpeg' alt = 'Funny old man'>
-      <p> Sol , Co-Founder of G-Force.
-      Athletic , lives in Nazareth ,she believes that Humanity is what life is all about .
-    never try to mess with her , or maybe you should go ahead and try !  </p>
+      <p> I'm Sol blah lahdkudsfh vioud   sh vdfks chvoidfs </p>
     </div>
 
     <div>
@@ -65,10 +55,15 @@
   <section id = 'contact'>
     <h1> contact </h1>
   <form method="POST" action="https://formspree.io/benjamin-newman@live.co.uk">
-    <input required pattern = '[A-Za-z]{1,20}' name = 'First name (Letters only)' type = 'text' placeholder = 'First Name'> <br>
-    <input required pattern = '[A-Za-z]{1,20}' name = 'Last name (Letters only)' type = 'text' placeholder = 'Last Name'> <br>
+    <label for="firstname">First name:</label>
+    <input required pattern = '[A-Za-z]{1,20}' name = 'firstname' type = 'text' placeholder = 'First Name (letters only)'> <br>
+    <label for="lastname">Last name:</label>
+    <input required pattern = '[A-Za-z]{1,20}' name = 'lastname' type = 'text' placeholder = 'Last Name (letters only)'> <br>
+    <label for="Email">Email:</label>
     <input required class = 'textbox textbox_small' name = 'Email' type = 'email' placeholder = 'example@gmail.com'> <br>
+    <label for="Mobile">Mobile:</label>
     <input class = 'textbox textbox_small' name = 'Mobile' type = 'tel' placeholder = 'Mobile number (optional)'> <br>
+    <label for="Message">Message:</label>
     <input id = 'message' required class = 'textbox textbox_big' name = 'Message' type = 'text' placeholder = 'Type message here' size = '50'> <br>
     <button class = 'btn' type="submit">Send</button>
   </form>
