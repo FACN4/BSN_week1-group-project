@@ -1,23 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans');
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
 body {
-  background-color:#d9f9ca;
+  background-color: #d9f9ca;
   font-family: Alegreya Sans;
-  font-size:18px;
+  font-size: 18px;
 }
 
 body section {
-  background-color:#d9f9ca;
+  background-color: #d9f9ca;
 }
-
-#about{
-  padding: 30px 0px 0px 0px;
+#about {
+  padding: 40px 0px 0px 0px;
 }
 
 .navbar {
   font-size: 26px;
   background-color: #4caf50;
   width: 100%;
-  position:fixed;
+  position: fixed;
   z-index: 1;
 }
 
@@ -28,11 +27,11 @@ body section {
   margin: 0;
 }
 
-.navbar_ul_li a{
+.navbar_ul_li a {
   padding: 10px;
   color: white;
   float: left;
-  border-right: 1px;
+  border-left: 1px;
   text-align: center;
   text-decoration: none !important;
 }
@@ -40,19 +39,26 @@ body section {
 .navbar_ul_li:hover {
   background-color: #c0edc1;
 }
- section {
-   background-color :#c0edc1;
- }
-  .container2{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
 section {
-  padding:20px;
   background-color: #c0edc1;
 }
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  padding: 20px;
+  background-color: #c0edc1;
+}
+.photo1 {
+  width: 100%;
+  border-style: solid;
+  border-color: darkgreen;
+  border-radius: 4px;
+}
 .photo {
+  height: 40%;
   width: 100%;
   border-style: solid;
   border-color: darkgreen;
@@ -92,8 +98,8 @@ select {
   background-color: #c0edc1;
 }
 
-.btn-error{
-  font-size:12px;
+.btn-error {
+  font-size: 12px;
   max-width: 200px;
   background-color: #086d0c;
   position: absolute;
@@ -116,18 +122,17 @@ div {
   nav {
     bottom: 0px;
   }
-    .container2{
-      display: block;
-      grid-template-columns: 1fr;
-    }
-    #about {
-      padding : 0px 0px 0px 0px;
-
-    }
-    footer {
-      display: none;
-    }
-    #contact {
-      padding : 0px 0px 80px 0px;
-    }
+  .container2 {
+    display: block;
+    grid-template-columns: 1fr;
+  }
+  #about {
+    padding: 0px 0px 0px 0px;
+  }
+  footer {
+    display: none;
+  }
+  #contact {
+    padding: 0px 0px 80px 0px;
+  }
 }
